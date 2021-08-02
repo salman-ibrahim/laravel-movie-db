@@ -48,7 +48,7 @@ class IndexViewModel extends ViewModel
                 return [$value => $this->genres()->get($value)];
             })->implode(', ');
 
-            $releaseDate = isset($movie['release_date']) ? Carbon::parse($movie['release_date'])->format('M d, Y') : "To Be Announced";
+            $releaseDate = isset($movie['release_date']) ? Carbon::parse($movie['release_date'])->format('M d, Y') : "Not Released";
 
             return collect($movie)->merge([
                 'poster_path' => 'https://image.tmdb.org/t/p/w500'. $movie['poster_path'],

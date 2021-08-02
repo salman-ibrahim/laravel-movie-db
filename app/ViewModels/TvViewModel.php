@@ -51,7 +51,7 @@ class TvViewModel extends ViewModel
                 return [$value => $this->genres()->get($value)];
             })->implode(', ');
 
-            $firstAirDate = isset($tv['first_air_date']) ? Carbon::parse($tv['first_air_date'])->format('M d, Y') : "To Be Announced";
+            $firstAirDate = isset($tv['first_air_date']) ? Carbon::parse($tv['first_air_date'])->format('M d, Y') : "Not Aired Yet";
             return collect($tv)->merge([
                 'poster_path' => 'https://image.tmdb.org/t/p/w500'. $tv['poster_path'],
                 'vote_average' => $tv['vote_average'] * 10 . '%',
