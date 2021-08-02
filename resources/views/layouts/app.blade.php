@@ -66,7 +66,7 @@
     <footer class="mt-10">
         <div class="bg-gray-500 font-light h-10 p-2 items-center text-center">
             &copy; 2021. Designed by
-            <a href="https://salman-ibrahim.github.io/">Salman</a>.
+            <a href="https://salman-ibrahim.github.io/" target="_blank">Salman</a>.
             API Provided by
             <a href="https://themoviedb.org" target="_blank">TMDb</a>.
         </div>
